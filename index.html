@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinos</title>
+    <link rel="shortcut icon" href="img/logopngcut.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong|Sofia|Changa">
+    <script src="javaScript/script.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body onload="startTime()">
+    <div id="container">
+        <header>
+            <h1>Pinos (Zacatecas)</h1>
+            <img height="160" src="img/logopng.png">
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <img src="img/logopngcut.png" width="35" height="35">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">    Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="gallery.html">Galería</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Más información
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="https://www.gob.mx/sectur/articulos/pinos-zacatecas">Secretaría de Turismo</a></li>
+                      <li><a class="dropdown-item" href="https://pueblosmagicos.mexicodesconocido.com.mx/zacatecas/pinos">México Desconocido</a></li>
+                      <li><a class="dropdown-item" href="https://www.zacatecastravel.com/detalle_pueblomagico.php?pm=4">Zacatecas Deslumbrante</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Suscribirse
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item">Suscríbete para recibir las novedades de Pinos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" >
+                        <form onsubmit="mensaje()">
+                            <div class="mb-3">
+                                <label for="Name" class="form-label">Nombre: </label>
+                                <input type="text" class="form-control" id="Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="Email" class="form-label">Email: </label>
+                                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" required>
+                            </div>
+                            ¿Visitarás Pinos pronto?
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="s" value="Sí" id="r1">
+                                <label class="form-check-label" for="r1">Sí
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="s" value="No" id="r2">
+                                <label class="form-check-label" for="r2">No
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="s" value="Talvez" id="r3">
+                                <label class="form-check-label" for="r2">Tal vez
+                                </label>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-dark">Suscribirse</button>
+                          </form>
+                      </a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div id="txt"></div>
+              </div>
+            </div>
+          </nav>
+          
+        <div class="clearfix"></div>
+        <section id="cont">
+            <article class="article">
+                <h2><b>Sobre el pueblo</b></h2>
+                <br>
+                <p>
+                    Pinos se localiza en el estado de Zacatecas, México. Fue fundado en 1594 con el nombre de <b><i>Real de Nuestra Señora de Sierra de Pinos</i></b>, siendo una "docena de chacuacos o chimeneas que parecen como emerger de entre las viejas construcciones virreinales y las vestuosas haciendas en donde se beneficiaban los metales en aquellos tiempos de bonanza minera" (SECTUR, 2019).<br><br>
+                    En la cocina del semidesierto, el nopal completa la dieta; el agave es otro elemento importante; las haciendas mezcaleras son fundamentales en la historia de la región, donde sus habitantes degustan condoches, gordas de horno, queso de tuna y panela, melcocha, aguamiel, pulque y mezcal.<br><br>
+                    Pinos es parte del programa <a href="https://www.gob.mx/sectur/articulos/pueblos-magicos-206528"><b><i>Pueblos Mágicos</i></b></a> desde 2012.
+                </p>
+            </article>
+            <article class="article">
+                <br>
+                <h2><b>Atractivos</b></h2>
+                <p>
+                    <ul>
+                        <li>Jardín Miguel Hidalgo.</li>
+                        <li>Jardín San Francisco.</li>
+                        <li>Hacienda La Pendencia.</li>
+                        <li>Museo de Arte Sacro.</li>
+                        <li>Parroquia de San Matías.</li>
+                        <li>Sierra de Pinos.</li>
+                        <li>Torre del Reloj.</li>
+                        <li>Museo Comunitario IV Centenario.</li>
+                    </ul>
+                </p>
+            </article>
+            <article class="article">
+                <br>
+                <h2><b>Festividades principales</b></h2>
+                <p>
+                    <ol>
+                        <li>Feria Regional de San Matías, segunda quincena de febrero. Muestra cultural y gastronómica.</li>
+                        <li>Festival de Danza Tradicional, 1er domingo de julio. Representaciones de la Danza de la pluma.</li>
+                        <li>Día de Muertos, 1 - 2 de noviembre. Desfile de calacas, concursos de disfraces y murales.</li>
+                        <li>Fiesta de los Faroles, 8 de diciembre.</li>
+                    </ol>
+                </p>
+            </article>
+            <article class="article">
+                <br>
+                <h2><b>Ubicación</b></h2>
+                <br>
+                <p>
+                    Ubicada a 1:15 h de San Luis Potosí; 1:45 h de Zacatecas; 2 h de Aguascalientes; y 3 h de Guanajuato.
+                </p>
+                <div class="accordion" id="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Ver mapa
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <iframe src="https://www.google.com/maps/place/98920+Pinos,+Zac./@22.2955725,-101.5878961,15z/data=!3m1!4b1!4m5!3m4!1s0x8681d9bdd08d1d91:0x4016978679cea20!8m2!3d22.2972779!4d-101.5747236" title="Google maps" width="525" height="450" allow></iframe>
+                          </div>
+                        </div>
+                      </div>
+            </article>
+            <article class="article">
+                <br>
+                <h2><b>Hoteles</b></h2>
+                <br>
+                <p>
+                    <table class="table table-striped table-hover">
+                        <tr>
+                            <th>Hotel</th>
+                            <th>Dirección</th>
+                            <th>Teléfono</th>
+                            <th>Disponibilidad</th>
+                        </tr>
+                        <tr>
+                            <td>Hotel Mesón del Conde</td>
+                            <td>Calle Gonzáles Ortega, 66, Colonia Centro</td>
+                            <td>496 864 5045</td>
+                            <td>9 Habitaciones</td>
+                        </tr>
+                        <tr>
+                            <td>Hotel Don Julián</td>
+                            <td>Calle Colón, 24, Colonia Centro</td>
+                            <td>496 864 0514</td>
+                            <td>21 Habitaciones</td>
+                        </tr>
+                        <tr>
+                            <td>Hotel San Francisco</td>
+                            <td>Calle Carreras, 1, Colonia Magisterial</td>
+                            <td>496 864 0378</td>
+                            <td>14 Habitaciones</td>
+                        </tr>
+                        <tr>
+                            <td>Hotel Santa Cecilia</td>
+                            <td>Calle Gonzáles Ortega, 93, Colonia Centro</td>
+                            <td>496 864 0073</td>
+                            <td>22 Habitaciones</td>
+                        </tr>
+                    </table>
+                </p>
+            </article>
+        </section>
+        <div class="clearfix"></div>
+        <footer>
+            Juan Carlos Martínez Zacarías &copy 2022
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
+

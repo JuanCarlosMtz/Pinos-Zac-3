@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: lightgray;
+    font-family: "Changa", Arial;
+    line-height: 1.5em;
+}
+
+h1{
+    font-family: "Trirong", Arial;
+}
+
+h2{
+    font-family: "Trirong", Arial;
+}
+
+#container{
+    width: 95%;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+
+header{
+    background-image: url("../img/header-back.jpg");
+    background-size: cover;
+    background-position-y: top;
+    height: 260px;
+    width: 100%;
+    margin: 0px;
+    padding-top: 22.5px;
+    text-align: center;
+    line-height: 150px;
+}
+
+nav{
+    color:white;
+}
+
+a:hover{
+    color: black;
+}
+
+.clearfix{
+    clear: both;
+}
+
+#cont{
+    float: left;
+    width: 100%;
+    min-height: 1300px;
+    background: white;
+    padding: 30px;
+}
+
+main{
+    background-color: white;
+}
+
+.content-g{
+    text-align: center;
+    padding: 40px;
+}
+
+.head2{
+    padding-top: 25px;
+    padding-bottom: 0px;
+    
+}
+
+.head2 h2{
+    background-color: darkred;
+    color: white;
+    height: 60px;
+    line-height: 55px;
+    text-align: center;
+    border: 2.5px solid black;
+}
+
+.article{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.article h2{
+    font-size: 25px;
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.carousel-item{
+    max-height: 500px;
+}
+
